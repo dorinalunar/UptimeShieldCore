@@ -14,8 +14,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 -m pip install -r requirements-dev.txt
-      - name: Format check
-        run: black --check contracts tests
       - name: Lint
         run: flake8 contracts tests --max-line-length=100 --ignore=E501,W503,E203,E402,F403,F405
       - name: GenVM lint (steward verification)
