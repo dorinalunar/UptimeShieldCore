@@ -1,0 +1,10 @@
+{
+  "service": "Beacon Cloud API",
+  "operator": "Beacon Systems (fixture provider for UptimeShield)",
+  "status_pages": [
+    "https://raw.githubusercontent.com/dorinalunar/UptimeShieldCore/main/fixtures/providers/beacon/api.html",
+    "https://raw.githubusercontent.com/dorinalunar/UptimeShieldCore/main/fixtures/providers/beacon/history.html",
+    "https://raw.githubusercontent.com/dorinalunar/UptimeShieldCore/main/fixtures/providers/beacon/nominal.html"
+  ],
+  "note": "Published by the domain administrator controlling this root path for UptimeShield source verification."
+}
