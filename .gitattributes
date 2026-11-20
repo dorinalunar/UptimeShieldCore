@@ -1,0 +1,3 @@
+fixtures/** linguist-documentation
+docs/** linguist-documentation
+*.md linguist-documentation
