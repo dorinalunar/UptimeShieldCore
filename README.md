@@ -56,9 +56,15 @@ list_vaults(offset, limit)                                                pagina
 | Prompt injection inside status HTML | Fetched text is wrapped inside `<<<BEGIN_UNTRUSTED_DATA>>>` / `<<<END_UNTRUSTED_DATA>>>` fences, scanned for injection markers, and restricted to exact JSON literals (`"incident"`, `"clean"`, `"inconclusive"`). |
 | Value stranded on rejected payable calls | `create_vault` and `subscribe_protection` catch validation failures once value is attached and credit the full amount to `refund_credits` for withdrawal via `withdraw_credit()`. |
 
+## Live Deployment (Studio Dev — Chain `61997`)
+
+- **Contract Address:** [`0x601B470288Dd14422f4A4bA3D44871F906Bb6864`](https://explorer-studio-dev.genlayer.com/address/0x601B470288Dd14422f4A4bA3D44871F906Bb6864)
+- **Import in Studio Dev:** [Open in GenLayer Studio Dev](https://studio-dev.genlayer.com/?import-contract=0x601B470288Dd14422f4A4bA3D44871F906Bb6864)
+- **Source SHA-256:** `480a5154795be7becbe2658dc12df94c44a4b9ad11588d5b4a6acb42850a5d0c`
+
 ## Repository Layout
 
-- [`contracts/UptimeShield.py`](contracts/UptimeShield.py) — Intelligent Contract (`py-genlayer`, SHA-256 `f434b4dd8dab3d9c51cd08aa5ba3d1d629a92de5bfc9299a4de3b7f8aebfadd6`)
+- [`contracts/UptimeShield.py`](contracts/UptimeShield.py) — Intelligent Contract (`py-genlayer`, SHA-256 `480a5154795be7becbe2658dc12df94c44a4b9ad11588d5b4a6acb42850a5d0c`)
 - [`tests/conftest.py`](tests/conftest.py) & [`tests/test_uptimeshield.py`](tests/test_uptimeshield.py) — Deterministic GenVM test harness & full security test suite
 - [`fixtures/providers/beacon`](fixtures/providers/beacon) & [`fixtures/providers/shadow`](fixtures/providers/shadow) — Attested and unattested provider status fixtures
 - [`STUDIO_DEV_DEPLOY.md`](STUDIO_DEV_DEPLOY.md) — Deployment configuration & verification guide for GenLayer Studio Dev (`chain 61997`)

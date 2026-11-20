@@ -9,7 +9,7 @@ pip install genvm-linter
 sh scripts/lint_current_sdk.sh
 ```
 
-`genvm-lint lint` validates the Studio Dev contract (`py-genlayer:5jycge4q8k23462jtb0b9fyey1s9qz928sz2nbrd9mg4sxqg2qng`), while `check` and `typecheck` run against the public `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` SDK target.
+`genvm-lint lint`, `check`, and `typecheck` validate `contracts/UptimeShield.py` directly against the `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` SDK target deployed at `0x601B470288Dd14422f4A4bA3D44871F906Bb6864` on Studio Dev (`chain 61997`).
 
 ## Walkthrough Scenario
 

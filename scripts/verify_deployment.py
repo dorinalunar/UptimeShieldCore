@@ -10,7 +10,7 @@ import sys
 import urllib.request
 
 RPC = os.environ.get("GENLAYER_RPC", "https://studio-dev.genlayer.com/api")
-ADDRESS = os.environ.get("UPTIMESHIELD_ADDRESS", "")
+ADDRESS = os.environ.get("UPTIMESHIELD_ADDRESS", "0x601B470288Dd14422f4A4bA3D44871F906Bb6864")
 SOURCE = pathlib.Path(__file__).resolve().parents[1] / "contracts" / "UptimeShield.py"
 
 

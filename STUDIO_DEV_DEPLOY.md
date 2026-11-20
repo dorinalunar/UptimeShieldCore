@@ -3,9 +3,10 @@
 | Field | Value |
 |---|---|
 | **Network** | GenLayer Studio Dev — chain `61997` (`https://studio-dev.genlayer.com/api`) |
+| **Deployed Address** | [`0x601B470288Dd14422f4A4bA3D44871F906Bb6864`](https://explorer-studio-dev.genlayer.com/address/0x601B470288Dd14422f4A4bA3D44871F906Bb6864) |
 | **Contract Source** | [`contracts/UptimeShield.py`](contracts/UptimeShield.py) |
-| **GenVM Runner** | `py-genlayer:5jycge4q8k23462jtb0b9fyey1s9qz928sz2nbrd9mg4sxqg2qng` |
-| **Source SHA-256** | `f434b4dd8dab3d9c51cd08aa5ba3d1d629a92de5bfc9299a4de3b7f8aebfadd6` |
+| **GenVM Runner** | `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` |
+| **Source SHA-256** | `480a5154795be7becbe2658dc12df94c44a4b9ad11588d5b4a6acb42850a5d0c` |
 | **Author** | Andrii Efimenko (`@dorinalunar`) |
 
 ## Architecture & Hardening Summary
@@ -23,13 +24,13 @@
 
 ```bash
 shasum -a 256 contracts/UptimeShield.py
-# Expected: f434b4dd8dab3d9c51cd08aa5ba3d1d629a92de5bfc9299a4de3b7f8aebfadd6
+# Expected: 480a5154795be7becbe2658dc12df94c44a4b9ad11588d5b4a6acb42850a5d0c
 ```
 
 Once deployed on Studio Dev (`chain 61997`), verify on-chain bytecode parity:
 
 ```bash
-export UPTIMESHIELD_ADDRESS="0xYourDeployedContractAddress"
+export UPTIMESHIELD_ADDRESS="0x601B470288Dd14422f4A4bA3D44871F906Bb6864"
 python3 scripts/verify_deployment.py
 ```
 

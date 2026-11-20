@@ -123,6 +123,8 @@ def _install_fake_genlayer() -> None:
     gl.vm = types.SimpleNamespace(UserError=UserError)
     gl.gl = gl
     gl.Address = str
+    gl.TreeMap = TreeMap
+    gl.DynArray = DynArray
     gl.public = _Public()
     gl.evm = types.SimpleNamespace(contract_interface=_evm_interface)
     gl.message = types.SimpleNamespace(
