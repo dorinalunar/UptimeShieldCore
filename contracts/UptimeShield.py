@@ -1,9 +1,7 @@
-# v0.3.0
-# { "Depends": "py-genlayer:5jycge4q8k23462jtb0b9fyey1s9qz928sz2nbrd9mg4sxqg2qng" }
+# v0.1.0
+# { "Depends": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6" }
 
-import genlayer as gl
-from genlayer.types import Address
-from genlayer.storage import TreeMap, DynArray
+from genlayer import *
 import hashlib
 import json
 import re
@@ -549,7 +547,7 @@ def compute_sponsor_remainder(vault: dict) -> int:
     return 0
 
 
-class UptimeShield(gl.contract.Contract):
+class UptimeShield(gl.Contract):
     vaults: TreeMap[str, str]
     vault_index: DynArray[str]
     subscriptions: TreeMap[str, str]
